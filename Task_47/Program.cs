@@ -10,10 +10,10 @@ int rows = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
 int columns = int.Parse(Console.ReadLine());
 
-double[,] array = GetDoubleArray(rows, columns, 0, 10);
+double[,] array = GetDoubleArray(rows, columns);
 PrintArray(array);
 
-double[,] GetDoubleArray(int m, int n, int minValue, int maxValue)
+double[,] GetDoubleArray(int m, int n)
 {
     double[,] result = new double[m,n];
     for (int i = 0; i < m; i++)
